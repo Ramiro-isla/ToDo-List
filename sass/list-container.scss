@@ -1,0 +1,68 @@
+@import "variables";
+@import "mixin.scss";
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .list-container-top {
+    width: 90%;
+    height: 3rem;
+    background-color: $background-container;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 5px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      padding-left: 10px;
+      width: 50%;
+      color: $font-color;
+    }
+  }
+  .to-do-list {
+    width: 90%;
+    margin-bottom: 2rem;
+    background-color: $background-container;
+    border-radius: 0 0 5px 5px;
+    .any-task {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+      p {
+        color: $font-color;
+        font-size: 2rem;
+      }
+    }
+    .to-do {
+      display: flex;
+      margin: 10px;
+      .content {
+        width: 50%;
+
+        .new-to-do {
+          color: $font-color;
+          background-color: $background-container;
+          border: none;
+
+          outline: none;
+          font-size: 1.5rem;
+        }
+      }
+      .buttons-container {
+        margin-left: 10px;
+        display: flex;
+        .edit-button {
+          @include buttons(3rem, 3rem, $edit-background);
+          margin-right: 5px;
+          color: black;
+        }
+        .delete-button {
+          @include buttons(3rem, 3rem, $delete-background);
+          .delete-img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}

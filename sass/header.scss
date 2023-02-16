@@ -1,0 +1,19 @@
+@import "variables";
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+  .title-container {
+    background-color: $background-container;
+    width: 90%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    h1 {
+      color: $font-color;
+    }
+  }
+}
