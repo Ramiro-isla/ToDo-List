@@ -30,7 +30,7 @@ addToDo.addEventListener("click", (e) => {
   const buttonEdit$$ = document.createElement("button");
   buttonEdit$$.classList.add("edit-button");
   buttonEdit$$.innerHTML = "Edit";
-  
+
   const buttonDelete$$ = document.createElement("button");
   buttonDelete$$.classList.add("delete-button");
 
@@ -38,7 +38,7 @@ addToDo.addEventListener("click", (e) => {
   buttonDeleteImg$$.src = "./img/trash.png";
   buttonDeleteImg$$.alt = "delete image";
   buttonDeleteImg$$.classList.add("delete-img");
-  buttonDelete$$.appendChild(buttonDeleteImg$$); 
+  buttonDelete$$.appendChild(buttonDeleteImg$$);
 
   buttonsContainer$$.appendChild(buttonEdit$$);
   buttonsContainer$$.appendChild(buttonDelete$$);
